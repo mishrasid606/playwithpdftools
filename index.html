@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Editor Tools</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">PLAY WITH PDF <i class="fas fa-gamepad"></i></a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <!-- All PDF Tools Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="allPdfToolsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All PDF Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="allPdfToolsDropdown">
+                            <a class="dropdown-item" href="https://sagarmergepdfapp.netlify.app/">Merge PDF</a>
+                            <a class="dropdown-item" href="#">Split PDF</a>
+                            <a class="dropdown-item" href="https://sidcompresspdf.netlify.app/">Compress PDF</a>
+                            <a class="dropdown-item" href="#">Rotate PDF</a>
+                            <a class="dropdown-item" href="#">Delete page</a>
+                        </div>
+                    </li>
+
+                    <!-- PDF Conversion Tools Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pdfConversionToolsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PDF Conversion Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pdfConversionToolsDropdown">
+                            <a class="dropdown-item" href="#">PDF to Word</a>
+                            <a class="dropdown-item" href="#">PDF to Excel</a>
+                            <a class="dropdown-item" href="#">PDF to PowerPoint</a>
+                            <a class="dropdown-item" href="#">PDF to Image</a>
+                            <a class="dropdown-item" href="#">PDF to Text</a>
+                        </div>
+                    </li>
+
+                    <!-- Image Tools Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="imageToolsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Image Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="imageToolsDropdown">
+                            <a class="dropdown-item" href="#">Image Crop</a>
+                            <a class="dropdown-item" href="#">Image Resize</a>
+                            <a class="dropdown-item" href="#">Image Rotate</a>
+                            <a class="dropdown-item" href="#">Image to JPG</a>
+                            <a class="dropdown-item" href="#">Image Compress</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     
+    
+        <div class="content container">
+            <h1>Every tool you need to work with PDFs in one place</h1>
+            <h2>Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to use! Merge, split, compress, convert, rotate, unlock, and watermark PDFs with just a few clicks.</h2>
+    
+            <!-- PDF Editing Tools -->
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Merge PDF</h3>
+                    <p>Combine multiple PDFs into one file with ease.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-compress"></i>
+                    <h3>Compress PDF</h3>
+                    <p>Reduce the file size of your PDFs without compromising quality.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-cut"></i>
+                    <h3>Split PDF</h3>
+                    <p>Divide large PDF files into smaller, more manageable parts.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-rotate"></i>
+                    <h3>Rotate PDF</h3>
+                    <p>Adjust the orientation of your PDF pages for better readability.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-trash-alt"></i>
+                    <h3>Delete page </h3>
+                    <p>Delete page from your PDFs to allow editing and copying.</p>
+                </div>
+            </div>
+    
+            <!-- Image Tools -->
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-crop"></i>
+                    <h3>Image Crop</h3>
+                    <p>Trim and crop your images to the desired size and aspect ratio.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-expand"></i>
+                    <h3>Image Resize</h3>
+                    <p>Change the dimensions of your images while maintaining quality.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-rotate-right"></i>
+                    <h3>Image Rotate</h3>
+                    <p>Adjust the rotation of your images for perfect alignment.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-file-image"></i>
+                    <h3>Image to JPG</h3>
+                    <p>Convert your images to JPG format with ease.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-compress"></i>
+                    <h3>Image Compress</h3>
+                    <p>Reduce the file size of your images without losing quality.</p>
+                </div>
+            </div>
+    
+            <!-- PDF Conversion Tools -->
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-file-word"></i>
+                    <h3>PDF to Word</h3>
+                    <p>Convert your PDF documents to editable Word files effortlessly.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-file-excel"></i>
+                    <h3>PDF to Excel</h3>
+                    <p>Transform PDF tables into Excel spreadsheets for easy manipulation.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-file-powerpoint"></i>
+                    <h3>PDF to PowerPoint</h3>
+                    <p>Change PDF presentations to PowerPoint slides for editing.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-file-image"></i>
+                    <h3>PDF to Image</h3>
+                    <p>Extract images from PDFs or convert PDF pages into image files.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>PDF to Text</h3>
+                    <p>Extract text from PDF files for easy copying and editing.</p>
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100012731941936&mibextid=ZbWKwL" target="_blank" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/mishrasid_606?igsh=ZWIzODU3OTJtc2Vy" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/mishrasid606" target="_blank" class="github">
+                <i class="fab fa-github"></i>
+                <div class="tooltip">Siddhartha Mishra<br>GitHub ID: mishrasid606</div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=7985855439" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <div class="tooltip">7985855439</div>
+            </a>
+            <a href="https://twitter.com/Siddhar63657423" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+                <div class="tooltip">Twitter ID: Siddhar63657423</div>
+            </a>
+            <a href="https://www.snapchat.com/add/siddhartham7879" target="_blank" class="snapchat">
+                <i class="fab fa-snapchat-ghost"></i>
+                <div class="tooltip">Snapchat ID: siddhartham7879</div>
+            </a>
+            <a href="https://www.linkedin.com/in/siddhartha-mishra-b77888291" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                <div class="tooltip">LinkedIn ID: Siddhartha Mishra</div>
+            </a>
+            <a href="https://portfoliosiddhartha.netlify.app/" target="_blank" class="portfolio">
+                <i class="fas fa-briefcase"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Siddhartha Mishra. All rights reserved.</p>
+        </div>
+
+        <div class="certifications">
+            <h1>The PDF software trusted by numbers of users</h1>
+            <h2>play with pdf is your number one web app for editing PDF with ease.</h2>
+            <h3>Enjoy all the tools you need to work efficiently with your digital documents while keeping your data safe and secure.</h3>
+            
+        </div>
+       
+        <div class="contact-us">
+            <h4>Contact Us</h4>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
